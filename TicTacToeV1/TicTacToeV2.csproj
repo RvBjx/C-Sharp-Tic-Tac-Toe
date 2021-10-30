@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>TicTacToeV1.App</StartupObject>
+    <ApplicationIcon>tic-tac-toe_39453.ico</ApplicationIcon>
+    <Authors>Roman Bühlmann</Authors>
+  </PropertyGroup>
+
+</Project>
