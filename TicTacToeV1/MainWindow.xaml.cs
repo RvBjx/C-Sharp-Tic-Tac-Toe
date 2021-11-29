@@ -68,7 +68,7 @@ namespace TicTacToeV1
                 // change content, back- and foreground to default values
                 button.Content = string.Empty;
                 button.Background = Brushes.White;
-                button.Foreground = Brushes.Blue;
+                button.Foreground = Brushes.Black; // Normal würde dort Blue hinkommen
             });
             // makes sure that the game hasn't ended
             mGameEnd = false;
@@ -104,11 +104,11 @@ namespace TicTacToeV1
             mResults[index] = mPlayer1Turn ? MarkType.Cross : MarkType.Nought;
 
             // set button text to the result
-            button.Content = mPlayer1Turn ? "X" : "O";
+            button.Content = mPlayer1Turn ? "❌" : "◯";
 
             //change noughts to green
-            if (!mPlayer1Turn)
-                button.Foreground = Brushes.Red;
+           // if (!mPlayer1Turn)
+               // button.Foreground = Brushes.Red; Dieser Teil ist Kommentiert, da dann auch die O s schwarz sind
 
             // toggle the players turns
             mPlayer1Turn ^= true;
