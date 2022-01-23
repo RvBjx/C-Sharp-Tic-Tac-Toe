@@ -132,7 +132,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button0_0.Background = Button1_0.Background = Button2_0.Background = Brushes.Green;
+                Button0_0.Background = Button1_0.Background = Button2_0.Background = Brushes.LightGreen;
             }
 
             // Row 1
@@ -141,7 +141,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button0_1.Background = Button1_1.Background = Button2_1.Background = Brushes.Green;
+                Button0_1.Background = Button1_1.Background = Button2_1.Background = Brushes.LightGreen;
             }
 
             // Row 2
@@ -150,7 +150,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button0_2.Background = Button1_2.Background = Button2_2.Background = Brushes.Green;
+                Button0_2.Background = Button1_2.Background = Button2_2.Background = Brushes.LightGreen;
             }
             #endregion
             #region Vertical wins
@@ -164,7 +164,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button0_0.Background = Button0_1.Background = Button0_2.Background = Brushes.Green;
+                Button0_0.Background = Button0_1.Background = Button0_2.Background = Brushes.LightGreen;
             }
             
             // Column 1
@@ -173,7 +173,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button1_0.Background = Button1_1.Background = Button1_2.Background = Brushes.Green;
+                Button1_0.Background = Button1_1.Background = Button1_2.Background = Brushes.LightGreen;
             }
             
             // Column 2
@@ -182,7 +182,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button2_0.Background = Button2_1.Background = Button2_2.Background = Brushes.Green;
+                Button2_0.Background = Button2_1.Background = Button2_2.Background = Brushes.LightGreen;
             }
             #endregion
             #region Diagonal wins
@@ -196,7 +196,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button0_0.Background = Button1_1.Background = Button2_2.Background = Brushes.Green;
+                Button0_0.Background = Button1_1.Background = Button2_2.Background = Brushes.LightGreen;
             }
 
             // top right to bottom left
@@ -205,7 +205,7 @@ namespace TicTacToeV1
                 // ends game
                 mGameEnd = true;
                 // Highlight winning cells in green
-                Button2_0.Background = Button1_1.Background = Button0_2.Background = Brushes.Green;
+                Button2_0.Background = Button1_1.Background = Button0_2.Background = Brushes.LightGreen;
             }
 
             #endregion
@@ -218,7 +218,7 @@ namespace TicTacToeV1
                 Container.Children.Cast<Button>().ToList().ForEach(button =>
                 {
                     // change content, back- and foreground to default values
-                    button.Background = Brushes.Orange;
+                    button.Background = Brushes.LightPink;
                 });
             }
             #endregion
